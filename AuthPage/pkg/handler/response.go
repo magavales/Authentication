@@ -11,7 +11,7 @@ type Response struct {
 
 func (resp *Response) SetStatusOk() {
 	resp.rw.WriteHeader(http.StatusOK)
-	resp.rw.Write([]byte("authorization completed."))
+	resp.rw.Write([]byte("authenticate completed."))
 }
 
 func (resp *Response) SetStatusUnauthorized() {
